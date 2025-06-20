@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url('images/login.png') no-repeat center center/cover;
+  color: rgb(255, 244, 251);
+  font-family: sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* optional dark overlay */
+  z-index: 0;
+}
+/* --------------------------------------------------------- */
+
+.login-title{
+  /* width: max-content; */
+  flex-grow: 1;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(162, 13, 107);
+  background: rgba(162, 13, 107, 0.1);
+  /* backdrop-filter: blur(4px); */
+  text-shadow: 4px 4px 10px rgba(137, 11, 105, 0.811);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 1px 2px 20px rgba(218, 112, 214, 0.5);
+  position: relative;
+  z-index: 1;
+}
+/* ------------ */
+
+.login-form{
+  position: absolute;
+  top: 120px; 
+  left: 50%;
+  transform: translateX(-50%);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+
+   width: 420px;
+   color: rgb(162, 13, 107);
+   border: 2px solid black;
+   padding: 160px 0px;
+   border-radius: 15px;
+   box-shadow: 1px 2px 20px rgba(218, 112, 214, 0.5);
+}
+.login-form input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px;
+  border: 2px solid rgb(162, 13, 107);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px; 
+}
+.login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.login-btn {
+  height: 40px;
+  width: 90px;
+  margin-top: 20px;
+  background-color: rgb(162, 13, 107);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(162, 13, 107, 0.5);
+  transition: background-color 0.1s;
+}
+.login-btn:hover {
+  background-color: rgb(88, 5, 70);
+}
+
+/* ------------------------------------------------- */
+
+.login-options {
+  position: absolute;
+  top: 550px; 
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.login-options a {
+  color: rgb(255, 157, 232);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.1s;
+}
+.login-options a:hover {
+  color: rgb(88, 5, 70);
+}
